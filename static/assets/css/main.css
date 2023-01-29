@@ -3309,8 +3309,9 @@ input, select, textarea {
 		position: relative;
 		cursor: default;
 		text-align: center;
-		z-index: 1;
+
 		min-height: 100vh;
+		padding-bottom: 100;
 	}
 
 		#intro input, #intro select, #intro textarea {

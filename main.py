@@ -1,5 +1,6 @@
 from flask import Flask, render_template, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -8,7 +9,10 @@ Bootstrap(app)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    x = datetime.now()
+
+    date = x.strftime("%A %d %B %Y")
+    return render_template("index.html", date=date)
 
 
 
