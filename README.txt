@@ -1,3 +1,15 @@
+A web site for presenting and showing items for sale through
+paypal payment system.
+
+Contributers of the company are
+
+Jessica Fleming
+Lily Kilshaw
+Kathleen Fleming
+Brian Fleming
+
+
+
 Dopetrope by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
