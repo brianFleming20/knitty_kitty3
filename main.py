@@ -15,6 +15,16 @@ def home():
     return render_template("index.html", date=date)
 
 
+@app.route("/ordering")
+def ordering():
+    return render_template("generic.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("elements.html")
+
+
 
 
 
