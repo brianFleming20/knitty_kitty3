@@ -34,13 +34,15 @@ class KnittyItem(db.Model):
     img_url = db.Column(db.String(250), nullable=False)
 
 
-class User(UserMixin, db.Model):
-    __tablename__ = "Users"
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(250), nullable=False)
-    password = db.Column(db.String(250), nullable=False)
-    email = db.Column(db.String(250), unique=True, nullable=False)
+# class User(UserMixin, db.Model):
+#     __tablename__ = "Users"
+#     id = db.Column(db.Integer, primary_key=True)
+#     name = db.Column(db.String(250), nullable=False)
+#     password = db.Column(db.String(250), nullable=False)
+#     email = db.Column(db.String(250), unique=True, nullable=False)
 db.create_all()
+
+
 
 
 
