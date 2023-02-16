@@ -1,25 +1,25 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
 
+{% block content %}
 {% include "header.html" %}
 
 
 		<div id="wrapper" class="fade-in">
 				<!-- Intro -->
-					<div id="intro">
+					<div id="" style="padding-bottom: 180px;">
 						<div style="position: absolute; top: 0px;">
 							<img src="static/images/background36a.png">
 						</div>
+						<br>
 						<div style="z-index: 1">
-
-						<h2>Giving wool the needle</h2>
-							</div>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
+							<h2>Giving wool the needle</h2>
+						</div>
 					</div>
 
 				<!-- Header -->
 					<header id="header">
-						<a href="{{ url_for('home') }}" class="logo" style="background-color: #EFA3C8">Knitty Kitty</a>
+							<a href="#header" style="padding-top: 40px;" class="button icon solid solo fa-arrow-down logo scrolly" ></a>
 					</header>
 
 				<!-- Nav -->
@@ -54,7 +54,9 @@
 								<a href="#" class="image main"><img src="static/images//back-image.jpg" alt="" /></a>
 
 							</article>
-
+						{{ ckeditor.load() }}
+						{{ ckeditor.config(name='body') }}
+						{{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
 						<!-- Posts -->
 							<section class="posts">
 								<article>
@@ -81,7 +83,6 @@
 										<li><a href="#" class="button">Request this</a></li>
 									</ul>
 								</article>
-
 							</section>
 
 						<!-- Footer -->
@@ -97,8 +98,10 @@
 <!--									<a href="#" class="page">10</a>-->
 									<a href="#" class="next">Next</a>
 								</div>
-							</footer>
 
+							</footer>
 					</div>
 
+
 {% include "footer.html" %}
+{% endblock %}
